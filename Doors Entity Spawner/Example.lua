@@ -2,12 +2,12 @@ local Creator = loadstring(game:HttpGet("https://raw.githubusercontent.com/Regul
 
 -- Create entity
 local entity = Creator.createEntity({
-    CustomName = "PresetEntity", -- Custom name of your entity
-    Model = "https://github.com/RegularVynixu/Utilities/blob/main/Doors%20Entity%20Spawner/Models/Rush.rbxm?raw=true", -- Can be GitHub file or rbxassetid
-    Speed = 100, -- Percentage, 100 = default Rush speed
+    CustomName = "Minion", -- Custom name of your entity
+    Model = "11377415792", -- Can be GitHub file or rbxassetid
+    Speed = 200, -- Percentage, 100 = default Rush speed
     DelayTime = 2, -- Time before starting cycles (seconds)
     HeightOffset = 0,
-    CanKill = true,
+    CanKill = false,
     BreakLights = true,
     FlickerLights = {
         true, -- Enabled
@@ -28,20 +28,8 @@ local entity = Creator.createEntity({
         Image2 = "", -- Image2 url
         Shake = true,
         Sound1 = {
-            10483790459, -- SoundId
+            9119732308, -- SoundId
             { Volume = 1 }, -- Sound properties
-        },
-        Sound2 = {
-            10483837590, -- SoundId
-            { Volume = 1 }, -- Sound properties
-        },
-        Flashing = {
-            true, -- Enabled
-            Color3.fromRGB(255, 255, 255), -- Color
-        },
-        Tease = {
-            true, -- Enabled
-            {Min = 1, Max = 3}, -- Amount
         },
     },
     CustomDialog = {"Your custom", "death message", "goes", "here."}, -- Custom death message (can be as long as you want)
